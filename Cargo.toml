@@ -1,0 +1,8 @@
+[package]
+name = "auth-module"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+user-keys-manager={version="0.1.0", path="./keys-manager"}
+spice-guard={version="0.1.0",path="./spice-guard"}
