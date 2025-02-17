@@ -7,3 +7,4 @@ edition = "2021"
 ed25519-dalek={version="2.1.1",features=['rand_core']}
 rand="0.8.0"
 blake2 = "0.10.6"
+sp-core="35.0.0"
