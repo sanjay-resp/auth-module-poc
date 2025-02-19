@@ -6,3 +6,4 @@ edition = "2021"
 [dependencies]
 user-keys-manager={version="0.1.0", path="./keys-manager"}
 spice-guard={version="0.1.0",path="./spice-guard"}
+zk-prover-verifier-service={version="0.1.0",path="./zk-prover-verifier-service"}
