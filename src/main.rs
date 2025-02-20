@@ -3,6 +3,7 @@ use user_keys_manager::{
     types::{NoncePayload, SpicePayload},
     *,
 };
+use zk_prover_verifier_service::proof_verify_1;
 
 pub fn main() {
     let (s_key, v_key) = generate_ephemeral_keypair();
@@ -29,4 +30,7 @@ pub fn main() {
     );
 
     println!("{:?}", address);
+
+    println!("switching to zk proof");
+    let _ = proof_verify_1();
 }
