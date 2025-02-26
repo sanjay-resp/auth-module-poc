@@ -1,4 +1,4 @@
-use blake2::{Blake2b512, Digest};
+use blake2::{Blake2s256, Digest};
 use user_keys_manager::{
     types::{NoncePayload, SpicePayload},
     verify_signature,
@@ -17,7 +17,7 @@ pub fn spice_generator(
 }
 
 fn spice_guard(jwt_payload: NoncePayload) -> Vec<u8> {
-    let mut hasher = Blake2b512::new();
+    let mut hasher = Blake2s256::new();
     hasher.update(jwt_payload.user_id.clone());
     hasher.update(jwt_payload.app_id.clone());
     hasher.finalize().to_vec()

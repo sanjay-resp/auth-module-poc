@@ -1,2 +1,3 @@
 /target
 .vscode
+/zk-prover-verifier-service/src/web2_auth_0001.zkey

@@ -22,6 +22,7 @@ impl NoncePayload {
     }
 }
 
+#[derive(Clone)]
 pub struct CompleteJwt {
     pub user_id: Vec<u8>,
     pub app_id: Vec<u8>,
